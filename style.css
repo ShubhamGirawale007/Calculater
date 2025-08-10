@@ -9,15 +9,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 80vh;
   padding: 10px;
 }
 
 #calculater {
   border: 2px solid rgb(98, 98, 98);
   border-radius: 10px;
-  width: 100%;
-  max-width: 500px; /* allow bigger on large screens */
+  width: 80%;
+  max-width: 260px; /* allow bigger on large screens */
   background-color: rgb(0, 0, 0);
   padding: 15px;
 }
@@ -34,7 +34,7 @@ body {
 
 .button-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); /* responsive buttons */
+  grid-template-columns: repeat(auto-fit, minmax(3, 1fr)); /* responsive buttons */
   gap: 10px;
 }
 
@@ -55,9 +55,32 @@ body {
 }
 
 /* Extra small screens */
-@media (max-width: 360px) {
+.button-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Always 3 buttons */
+  gap: 10px;
+}
+
+/* Responsive tweaks for smaller devices */
+@media (max-width: 768px) {
+  #calculater {
+    max-width: 260px; /* Shrinks container */
+  }
   .button {
+    font-size: 1rem;
     padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  #calculater {
+    max-width: 220px; /* Shrinks even more on small phones */
+  }
+  #display {
+    font-size: 1.2rem;
+  }
+  .button {
     font-size: 0.9rem;
+    padding: 6px;
   }
 }
