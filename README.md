@@ -50,7 +50,7 @@ Edit
 ## 📥 Installation
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/responsive-calculator.git
+   git clone https://github.com/ShubhamGirawale007/Calculater.git
 
 Navigate into the folder
 
