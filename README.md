@@ -36,7 +36,7 @@ Edit
 ## 🖥️ Preview
 | Desktop View | Mobile View |
 |--------------|-------------|
-| ![Desktop Screenshot](Desktop.png) | ![Mobile Screenshot](Mobile.png) |
+| ![Desktop Screenshot](img/Desktop.png) | ![Mobile Screenshot](img/Mobile.png) |
 
 ---
 
